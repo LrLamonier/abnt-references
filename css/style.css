@@ -1,0 +1,281 @@
+/**************************/
+/* Header */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.09)
+  );
+}
+
+.logo {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.logo-img {
+  height: 4.4rem;
+}
+
+/**************************/
+/* Navigation */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 200ms;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #03dac5;
+}
+
+.logo-txt:link,
+.logo-txt:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  transition: all 200ms;
+}
+
+.logo-txt:hover,
+.logo-txt:active {
+  color: #03dac5;
+}
+
+/**************************/
+/* App header */
+/**************************/
+
+.app-header {
+  width: fit-content;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  overflow: hidden;
+  display: flex;
+}
+
+/**************************/
+/* Application */
+/**************************/
+
+.application {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.app-body {
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem 4.8rem;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.09)
+  );
+}
+
+.reference-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  justify-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.reference-form div {
+  width: 100%;
+}
+
+.reference-form label {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.reference-form .label-third {
+  font-size: 1.6rem;
+}
+
+.reference-form input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  color: #fff;
+  font-family: inherit;
+  background-color: #121212;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.16),
+    rgba(255, 255, 255, 0.16)
+  );
+  border: none;
+  border-radius: 9px;
+}
+
+.checkbox-input {
+  width: 3.2rem !important;
+  margin-bottom: 1.2rem;
+}
+
+input.checkbox-input {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.inline-input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-input {
+  margin-bottom: 1.2rem;
+}
+
+/**************************/
+/* Application */
+/**************************/
+
+.btn-home {
+  background-color: #777;
+}
+
+.btn-active {
+  background-color: #fff;
+}
+
+.start-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3.2rem;
+  gap: 4.8rem;
+}
+
+.btn-start {
+  border-radius: 9px;
+  height: 8rem;
+}
+
+/**************************/
+/* Result */
+/**************************/
+
+.result {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  border-radius: 11px;
+  padding: 4.8rem 4.8rem;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.09)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.reference-box {
+  padding: 3.2rem;
+  background-color: #fff;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 600ms;
+}
+
+.reference {
+  color: #000;
+  font-size: 12px;
+}
+
+.btn-copy {
+  border-radius: 9px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Information section */
+
+.information {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.information-body {
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem 4.8rem;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.09)
+  );
+}
+
+.information-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.09),
+    rgba(255, 255, 255, 0.09)
+  );
+}
+
+.footer-txt {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.version {
+  font-weight: 700;
+}

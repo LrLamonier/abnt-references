@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gerador de referências seguindo as normas da Associação Brasileira de Normas Técnicas (ABNT) descritas na norma ABNT NBR 6023:2018 de 2018."
+    />
+    <link rel="icon" href="img/appicon.svg" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/form.js"></script>
+    <script defer src="js/generator.js"></script>
+    <title>Gerador de referências ABNT</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img class="logo-img" src="img/appicon.svg" alt="Ícone de um livros" />
+        <a class="logo-txt" href="#">Gerador de referências ABNT</a>
+      </div>
+      <ul class="main-nav-list">
+        <li>
+          <a class="main-nav-link link-smooth" href="#information"
+            >Informações</a
+          >
+        </li>
+        <li>
+          <a class="main-nav-link link-smooth" href="#documentation"
+            >Documentação</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="container application">
+        <div class="app-header">
+          <button class="btn btn-home btn-active">Início</button>
+        </div>
+        <div class="app-body">
+          <div class="start">
+            <h1>Selecione um tipo de documento</h1>
+            <div class="start-buttons">
+              <button class="btn btn-start btn-book">
+                Livro, monografia,<br />dissertação, tese
+              </button>
+              <button class="btn btn-start btn-article">Artigo</button>
+              <button class="btn btn-start btn-event">Evento</button>
+              <button class="btn btn-start btn-presentation">
+                Apresentação em evento
+              </button>
+            </div>
+          </div>
+          <form class="reference-form hidden" name="reference-form">
+            <!-- <div>
+              <label for="year">Ano de publicação:</label>
+              <input id="year" type="text" placeholder="2012" name="year" />
+            </div> -->
+          </form>
+          <div class="form-buttons">
+            <button class="btn btn-clear hidden">Limpar</button>
+            <button class="btn btn-submit hidden">Gerar referência</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="#referenceBox">
+        <div class="result">
+          <div class="reference-box">
+            <p class="reference">
+              <strong>Exemplo:</strong><br /><br />
+              BAVARESCO, Agemir et al. <strong>Projetos de filosofia</strong>.
+              Porto Alegre: EDIPUCRS, 2011. Disponível em:
+              http://ebooks.pucrs.br/edipucrs/projetosdefilosofia.pdf. Acesso
+              em: 21 ago. 2011.
+            </p>
+          </div>
+          <button class="btn btn-copy">
+            Copiar para a área de transferência
+          </button>
+        </div>
+      </div>
+
+      <div class="container information" id="information">
+        <div class="app-header">
+          <button class="btn btn-active">Informações</button>
+        </div>
+        <div class="information-body">
+          <p class="information-text">
+            Seja bem-vindo ao gerador de referências bibliográficas no padrão
+            ABNT NBR 6023. Neste site, é possível criar referências acadêmicas
+            de forma simples e prática, respeitando as regras vigentes e
+            evitando a ocorrência de plágios.
+          </p>
+          <p class="information-text">
+            No Brasil, os trabalhos acadêmicos, independentemente de seu nível
+            de complexidade, devem seguir os padrões de elaboração desenvolvidos
+            pela Associação Brasileira de Normas Técnicas (ABNT), cujas regras
+            dispõem sobre a formatação, redação e referenciação dessas obras,
+            sendo a última, em particular, definida pela Norma Brasileira (NBR)
+            6023:2018.
+          </p>
+          <p class="information-text">
+            A referenciação das obras acadêmicas é um dos passos mais
+            importantes na metodologia científica e na produção de conhecimento
+            como um todo, uma vez que possibilita que o leitor de determinada
+            informação conheça os dados e o referencial teórico que a compõem.
+          </p>
+          <p class="information-text">
+            Dessa forma, sem a referenciação bibliográfica, não há produção
+            científica, uma vez que não é possível conhecer as bases que
+            sustentam determinada constatação ou conclusão, o que, por sua vez,
+            inviabiliza a utilização dessas para outras obras do conhecimento.
+          </p>
+          <p class="information-text">
+            Não é por isso, entretanto, que a referenciação bibliográfica deve
+            ser uma tarefa difícil ou dispendiosa na realização de um trabalho
+            acadêmico &#95; pelo contrário, é preciso que o foco esteja na
+            pesquisa, e que a forma, bem como suas normas, sejam seguidas do
+            modo mais fácil e intuitivo possível.
+          </p>
+        </div>
+      </div>
+
+      <div class="container information">
+        <div class="app-header">
+          <button class="btn btn-active" id="documentation">
+            Documentação
+          </button>
+        </div>
+        <div class="information-body">
+          <p class="information-text">
+            O acesso à norma pelo site da ABNT é pago. Existem na
+            <em>internet</em>, no entanto, muitos recursos gratuitos. A
+            Universidade de São Paulo, por exemplo,
+            <a
+              class="link"
+              href="https://usp.br/sddarquivos/aulasmetodologia/abnt6023.pdf"
+              >disponibiliza gratuitamente um guia completo da norma.</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer class="footer">
+    <p class="footer-txt">
+      Criado por
+      <a
+        class="link"
+        href="https://twitter.com/YaBoyRasor"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Lucas Lamonier</a
+      >. <span class="version">Version 1.0</span>
+    </p>
+  </footer>
+</html>
