@@ -24,7 +24,7 @@ const clipboardFunction = function () {
 ////////////////////////
 
 const errorMessage = function () {
-  document.querySelector(".reference").innerHTML = "Referência inválida!";
+  document.querySelector(".reference").innerHTML = "Dados Invalidos!";
 };
 
 ////////////////////////
